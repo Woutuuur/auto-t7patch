@@ -24,9 +24,10 @@ Note: you can run `python launch_patched.py --help` for more information.
 ### Adding to Steam
 The easiest way to add the script to Steam is by converting the script to an executable and creating a shortcut to it. Converting the script to an executable requires `pyinstaller`, which you can install by running `pip install pyinstaller`. 
 
-1. Convert the script to a `.exe`: `pyinstaller .\launch_patched.spec`
-    Note: Your anti-virus might flag the `.exe` as a virus. Either disable it or add an exception for this file / directory.
-2. Right click `launch_patched.exe` in the `dist` directory and create a shortcut.
-3. Right click the shortcut, click properties, and in the "target" field, at the end of the existing string, add your command line arguments. Adding the location of the t7 patch executable using `--t7` is required (see [usage](#usage)).
-4. Add a random `.exe` to Steam. Follow Steam's instructions on how to do this [here](https://help.steampowered.com/en/faqs/view/4B8B-9697-2338-40EC).
-5. Right click the newly added item, go to properties and change the "target" to point to your shortcut (`.lnk` file).
+1. Convert the script to a `.exe`: `pyinstaller .\launch_patched.spec`.
+   Note: Your anti-virus might flag the `.exe` as a virus. Either disable it or add an exception for this file / directory.
+3. Right click `launch_patched.exe` in the `dist` directory and create a shortcut.
+4. Right click the shortcut, click properties, and in the "target" field, at the end of the existing string, add your command line arguments.
+   Adding the location of the t7 patch executable using `--t7` is required (see [usage](#usage)).
+5. Add a random `.exe` to Steam. Follow Steam's instructions on how to do this [here](https://help.steampowered.com/en/faqs/view/4B8B-9697-2338-40EC).
+6. Right click the newly added item, go to properties and change the "target" to point to your shortcut (`.lnk` file) from step 2.
