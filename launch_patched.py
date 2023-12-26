@@ -27,7 +27,7 @@ def create_parser():
 
     parser.add_argument('--steam', default=DEFAULT_STEAM_PATH, help='Path to the Steam executable', metavar='STEAM_PATH', dest='steam_executable_path', type=ValidPath)
     parser.add_argument('--game', default=DEFAULT_GAME_PATH, help='Path to the Black Ops III game executable', metavar='GAME_PATH', dest='game_executable_path', type=ValidPath)
-    parser.add_argument('r7_executable_path', help='Path to the T7 patch executable', metavar='R7_PATH', type=ValidPath)
+    parser.add_argument('r7_executable_path', help='Path to the T7 patch executable', metavar='T7_PATH', type=ValidPath)
 
     return parser
 
