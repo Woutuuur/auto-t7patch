@@ -14,7 +14,9 @@ GAME_ALIVE_CHECK_INTERVAL_SECONDS = 5
 GAME_STARTED_CHECK_INTERVAL_SECONDS = 0.5
 
 def ValidPath(str: str) -> Path:
-    if not (path := Path(str)).exists():
+    path = Path(str)
+
+    if not path.exists():
         raise argparse.ArgumentTypeError(f'Path {str} does not exist')
     
     return path
